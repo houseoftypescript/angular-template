@@ -23,6 +23,6 @@ jobs:
       - name: Install Dependencies
         run: yarn install --network-timeout 86400000
       - name: Unit Test
-        run: yarn test --browsers=ChromeHeadless --watch=false --code-coverage"
+        run: yarn test --browsers=ChromeHeadless --watch=false --code-coverage
       - name: Build Production
         run: yarn build --prod
