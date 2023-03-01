@@ -19,9 +19,9 @@ jobs:
       - name: Install Dependencies
         run: yarn install --network-timeout 86400000
       - name: Unit Test
-        run: yarn test
+        run: yarn test --browsers=ChromeHeadless --watch=false --code-coverage
       - name: Build Production
-        run: yarn build --base-href /angular-template/
+        run: yarn build --prod --base-href /angular-template/
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
