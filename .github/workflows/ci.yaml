@@ -25,4 +25,4 @@ jobs:
       - name: Unit Test
         run: yarn test --browsers=ChromeHeadless --watch=false --code-coverage
       - name: Build Production
-        run: yarn build --prod
+        run: yarn build
